@@ -3,7 +3,7 @@ use anchor_lang::prelude::*;                                    // importing the
 declare_id!("Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS");    //  the address or program id of your program
 
 #[program]                                                      // program module and where the logic of the program lives
-pub mod my_solana_program {
+pub mod anchorStarter {
     use super::*;
     pub fn setup_platform(ctx: Context<TweetPlatform>) -> ProgramResult {
         let tweet = &mut ctx.accounts.tweet;
